@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cash Flow</title>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content ="width= device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="cashflow.css">
+    <script src="cashflow.js"></script>
+  </head>
+  <body>
+
+  <!--  <header>
+      <nav>
+        <ul>
+          <li><a href="">Information</a><li>
+          <li><a href="">Calculator</a></li>
+        </ul>
+      </nav>
+    </header>
+-->
+    <div class="header">
+      <h1>CASHFLOW CALCULATOR</h1>
+    </div>
+
+    <div class="container">
+
+      <div class="main row">
+        <div class="asset col-md-6">
+          <h1 id="asset">ASSETS</h1>
+          <form>
+            <div>
+              <label>Name</label>
+              <input type="text" class="asset-name" placeholder="Asset Name">
+            </div>
+
+            <div>
+              <label>Amount</label>
+              <input type="number" class="asset-amount" placeholder="0.00">
+            </div>
+          </form>
+          <button class="add-asset">Asset Submit</button>
+        </div>
+
+        <div class="liability col-md-6">
+          <h1 id="liability">LIABILITIES</h1>
+          <form>
+            <div>
+              <label>Name</label>
+              <input type="text" class="liability-name" placeholder="Liability Name">
+            </div>
+
+            <div>
+              <lable>Amount</label>
+              <input type="number" class="liability-amount" placeholder="0.00">
+            </div>
+          </form>
+          <button class="add-liability">Liability Submit</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="html-content row">
+          <div class="col-lg-6">
+            <h2 id="asset-title">Your Assets</h2>
+            <div class="asset-box">
+              <ul class="asset-list"></ul> <!--where the inputs appear-->
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 id="liability-title">Your Liabilities</h2>
+            <div class="liability-box">
+              <ul class="liability-list"></ul> <!--where the inputs appear-->
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 id="final-asset">TOTAL ASSETS</h3> <span id="total-asset"></span>
+          </div>
+          <div class="col-lg-6">
+            <h3 id="final-lia">TOTAL LIABILITIES</h3> <span id="total-lia"></span>
+          </div>
+        </div>
+
+        <div class="row">
+          <h3 id="total">CASHFLOW AMOUNT</h3><span id="cash-flow-amount"></span>
+          <div>
+          <button class="calculate">Caculate</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>

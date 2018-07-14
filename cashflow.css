@@ -1,0 +1,338 @@
+* {
+	margin: auto;
+	padding: ;
+	-moz-box-sizing: border-box ;
+	-webkit-box-sizing: border-box ;
+	box-sizing: border-box ;
+	/*-webkit-appearance: none;*/
+	list-style: none ;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'ubuntu', sans-serif;
+	font-weight: bold;
+
+}
+
+h1{
+  color:#00d149;
+  font-weight: 900;
+}
+
+h3{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header{
+
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-size: 50px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+ul{
+  list-style-type: circle;
+}
+
+@media (min-width: 350px){
+  header h1 {
+    font-size: 40px;
+  }
+}
+
+.container{
+  background-color:	#e5e6eb;
+  width: 100%;
+  height: 1080;
+  padding-top: 40px;
+}
+
+@media (min-width: 350px){
+  .container{
+    border-top: 2px solid #000;
+  }
+}
+
+.main{
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+
+}
+
+@media (min-width: 350px){
+  .main {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+.row{
+  text-align: center;
+
+}
+
+.asset{
+  padding-top: 10px;
+  background-color: #6799FF;
+  display: block;
+  border-radius: 8px;
+
+}
+
+.liability{
+  padding-top: 10px;
+  background-color: #ff5079;
+  display: block;
+  border-radius: 8px;
+
+}
+
+.cash-flow{
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+
+#asset, #liability {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'ubuntu', san-serif;
+  font-weight: 900;
+
+}
+
+
+form{
+  font-family: 'Nunito', san-serif;
+  font-size: 25px;
+  padding-top: 15px;
+}
+
+label{
+  width: 88px;
+  margin: auto;
+  float: center;
+  text-align: center;
+  padding-right: 15px;
+}
+
+button{
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-family: 'fantasy', sans-serif;
+  font-size: 20px !important;
+}
+
+.add-asset{
+  background-color: #21ffa3;
+}
+
+.add-asset:hover{
+  color: white;
+  opacity: 0.85;
+}
+
+.add-liability{
+  background-color:	#e85050;
+}
+
+.add-liability:hover{
+  color: white;
+  opacity: 0.85;
+}
+
+.calculate{
+  background-color: #00d7ff;
+}
+
+.calculate:hover{
+  color: white;
+  opacity: 0.85;
+}
+
+#asset-title{
+  font-weight: 800;
+  color: #6799FF;
+  background-color: white;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+#liability-title{
+  font-weight: 800;
+  color: #ff5079;
+  background-color: white;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+.asset-remove {
+  float: right;
+	cursor: pointer;
+  width:20px;
+  height:20px;
+  background-size:cover;
+	background-image: url('https://s9.postimg.cc/cnm1gsm33/Trash_Can-512.png');
+}
+
+.liability-remove {
+  float: right;
+	cursor: pointer;
+  width:20px;
+  height:20px;
+  background-size:cover;
+  background-image: url('https://s9.postimg.cc/cnm1gsm33/Trash_Can-512.png');
+}
+
+li .asset-text{
+  margin-left: 2em;
+	width: 22px;
+	height: 30px;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: left;
+  color: blue;
+}
+
+li .asset-number{
+	margin-left:;
+	width: 22px;
+	height: 30px;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: left;
+  color: blue
+}
+
+li .liability-text{
+  margin-left: 2em;
+	width: 22px;
+	height: 30px;
+  font-size: 19px;
+  text-transform: uppercase;
+	text-align: left;
+  color: red;
+}
+
+li .liability-number{
+  margin-left:;
+	width: 22px;
+	height: 30px;
+  font-size: 19px;
+  text-transform: uppercase;
+	text-align: left;
+  color: red;
+}
+
+.asset-box{
+  opacity: 0.75;
+  padding: auto;
+  margin: auto;
+  margin-right: 40px;
+}
+
+.liability-box{
+  opacity: 0.75;
+  padding: auto;
+  margin: auto;
+  margin-right: 40px;
+}
+
+/* asset list items*/
+.asset-list{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.asset-list li{
+  color: #131313;
+	background-color: rgba(255,255,255,0.8);
+	margin-bottom: 0.2em;
+	word-wrap: break-word;
+}
+
+.asset-list li:hover {
+  background-color: rgb(255,255,255);
+}
+
+.asset-list li:last-child{
+  margin-bottom: 0;
+}
+
+/* Liability list items*/
+.liability-list{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.liability-list li{
+  color: #131313;
+	background-color: rgba(255,255,255,0.8);
+	margin-bottom: 0.2em;
+	word-wrap: break-word;
+}
+
+.liability-list li:hover {
+  background-color: rgb(255,255,255);
+}
+
+.liability-list li:last-child{
+  margin-bottom: 0;
+}
+
+.html-content{
+  margin-bottom: 20px;
+}
+
+#total-asset{
+  font-size: 40px;
+  color: green;
+  margin: auto;
+}
+
+#total-lia{
+  font-size: 40px;
+  color: red;
+}
+
+#cash-flow-amount{
+  font-size: 40px;
+}
+
+#final-asset{
+  background-color: #6799FF;
+  width: 300px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+#final-lia{
+  background-color: #ff5079;
+  width: 300px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+#total{
+  background-color: #21ffa3;
+  width: 300px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
